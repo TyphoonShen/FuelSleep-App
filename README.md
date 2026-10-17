@@ -135,6 +135,3 @@ FuelSleep/
 **Changing the checks:** edit `RulesEngine.swift`. Each check is a short `if` block.
 
 **Changing how the AI responds:** edit the `system` text in `ClaudeService.swift`. Each call uses structured outputs (a JSON schema), so the app always gets clean numbers instead of free text.
-
-## If the build fails
-Copy the red error message from Xcode (click it in the left-hand Issue navigator) and paste it into the chat. These are usually one-line fixes.
