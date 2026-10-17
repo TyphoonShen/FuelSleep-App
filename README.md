@@ -1,6 +1,6 @@
 # FuelSleep
 
-A personal iPhone app that pulls your sleep and workouts from Apple Health, logs meals from a photo, and tells you what to fix today. For example: *you trained this morning but you're 90g behind on carbs, so add rice or oats to your next meals.*
+A personal iPhone app that pulls your sleep and workouts from Apple Health, logs meals from a photo or described text, and tells you what to fix today. For example: *you trained this morning but you're 90g behind on carbs, so add rice or oats to your next meals.*
 
 > A personal project, built with Claude. It isn't on the App Store; you build it yourself with Xcode (see Setup). It is not medical advice.
 
