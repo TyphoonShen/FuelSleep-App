@@ -1,0 +1,45 @@
+# Generates FuelSleep.xcodeproj. Run `xcodegen` in this folder (see README).
+name: FuelSleep
+options:
+  bundleIdPrefix: com.example
+  deploymentTarget:
+    iOS: "17.0"
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    MARKETING_VERSION: "1.0"
+    CURRENT_PROJECT_VERSION: "1"
+targets:
+  FuelSleep:
+    type: application
+    platform: iOS
+    sources:
+      - FuelSleep
+    settings:
+      base:
+        # Change to something unique to you, e.g. com.yourname.fuelsleep
+        PRODUCT_BUNDLE_IDENTIFIER: com.tayfun.fuelsleep
+        # Optional: add your Apple Team ID so re-running xcodegen keeps signing set up
+        # DEVELOPMENT_TEAM: XXXXXXXXXX
+        TARGETED_DEVICE_FAMILY: "1"
+        CODE_SIGN_STYLE: Automatic
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        # Extra home-screen icons the app can switch to (Halloween theme)
+        ASSETCATALOG_COMPILER_ALTERNATE_APPICON_NAMES: AppIcon-Halloween
+        ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS: YES
+    entitlements:
+      path: FuelSleep/FuelSleep.entitlements
+      properties:
+        com.apple.developer.healthkit: true
+        com.apple.developer.healthkit.access: []
+    info:
+      path: FuelSleep/Info.plist
+      properties:
+        CFBundleDisplayName: FuelSleep
+        UILaunchScreen: {}
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+        NSHealthShareUsageDescription: FuelSleep reads your sleep, workouts and activity to check whether you're eating enough for your training.
+        NSHealthUpdateUsageDescription: FuelSleep saves the meals you log (calories, protein, carbs and fat) to Apple Health.
+        NSCameraUsageDescription: FuelSleep uses the camera to photograph meals so it can estimate their nutrition.
